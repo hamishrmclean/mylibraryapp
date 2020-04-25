@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 // Connect to MongoDB --- Replace this with your Connection String
 CONNECTION_STRING = "mongodb+srv://hamishrmclean:<password>@cluster0-i0nwa.mongodb.net/test?retryWrites=true&w=majority";
 
-MONGO_URL = CONNECTION_STRING.replace("<password>",process.env.MONGO_PASSWORD);
+MONGO_URL = CONNECTION_STRING.replace("<password>","hello");
 
 mongoose.connect(MONGO_URL || "mongodb://localhost/info30005", {
     useNewUrlParser: true,
